@@ -3,6 +3,7 @@ package com.example.hiltpractice.ui.main
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.fragment.findNavController
 import com.example.hiltpractice.R
 import com.example.hiltpractice.databinding.FragmentMainHomeBinding
 import com.example.hiltpractice.ui.base.BaseFragment
@@ -17,6 +18,12 @@ class MainHomeFragment : BaseFragment<FragmentMainHomeBinding, MainViewModel>(){
         super.onViewCreated(view, savedInstanceState)
         binding.apply {
             mainViewModel = viewModel
+            btnRecycler.setOnClickListener {
+                findNavController().navigate(
+                    MainHomeFragmentDirections
+                        .actionMainHomeFragmentToUserFragment()
+                )
+            }
         }
 
     }

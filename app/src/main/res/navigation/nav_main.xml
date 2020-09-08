@@ -9,5 +9,14 @@
         android:id="@+id/mainHomeFragment"
         android:name="com.example.hiltpractice.ui.main.MainHomeFragment"
         android:label="MainHomeFragment"
-        tools:layout="@layout/fragment_main_home"/>
+        tools:layout="@layout/fragment_main_home">
+        <action
+            android:id="@+id/action_mainHomeFragment_to_userFragment"
+            app:destination="@id/userFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.example.hiltpractice.ui.user.UserFragment"
+        android:label="UserFragment"
+        tools:layout="@layout/fragment_user"/>
 </navigation>
