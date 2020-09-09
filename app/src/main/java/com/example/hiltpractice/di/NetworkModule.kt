@@ -1,11 +1,9 @@
 package com.example.hiltpractice.di
 
 import com.example.hiltpractice.api.HttpRequestInterceptor
-import com.example.hiltpractice.api.NetworkResponseAdapterFactory
 import com.skydoves.sandwich.coroutines.CoroutinesResponseCallAdapterFactory
 import dagger.Module
 import dagger.Provides
-import dagger.hilt.DefineComponent
 import dagger.hilt.InstallIn
 import dagger.hilt.android.components.ApplicationComponent
 import okhttp3.OkHttpClient
@@ -17,7 +15,7 @@ import javax.inject.Singleton
 @InstallIn(ApplicationComponent::class)
 object NetworkModule {
     const val TIME_OUT_SEC = 10
-    const val BASE_URL = "https://api.github.com/"
+    const val BASE_URL = "https:api.github.com/"
 
     @Provides
     @Singleton

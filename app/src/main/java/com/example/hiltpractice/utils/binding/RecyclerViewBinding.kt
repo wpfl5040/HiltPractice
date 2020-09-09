@@ -16,9 +16,9 @@ object RecyclerViewBinding {
 
     @JvmStatic
     @BindingAdapter("userList")
-    fun userList(view: RecyclerView, userList: List<UserResponseItem>){
+    fun userList(view: RecyclerView, userList: List<UserResponseItem>?){
         if(!userList.isNullOrEmpty()) {
-            (view as UserAdapter).submitList(userList)
+            (view.adapter as? UserAdapter)?.submitList(userList)
         }
     }
 }

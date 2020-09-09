@@ -6,9 +6,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
-import androidx.recyclerview.widget.RecyclerView.ViewHolder
 
-class BaseViewHolder<Binding : ViewDataBinding>(val binding: Binding) : ViewHolder(binding.root)
 
 abstract class BaseAdapter<Model, Binding : ViewDataBinding>(diffUtil: DiffUtil.ItemCallback<Model>) :
     ListAdapter<Model, BaseViewHolder<Binding>>(diffUtil) {

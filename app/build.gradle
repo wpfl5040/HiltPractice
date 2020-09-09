@@ -98,5 +98,9 @@ dependencies {
     implementation "com.squareup.moshi:moshi-kotlin:1.9.2"
     implementation "com.squareup.moshi:moshi-kotlin-codegen:1.9.2"
 
+    // glide
+
+    implementation "com.github.bumptech.glide:glide:4.11.0"
+    kapt "com.github.bumptech.glide:compiler:4.11.0"
 
 }

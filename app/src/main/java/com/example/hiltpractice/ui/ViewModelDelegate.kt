@@ -12,9 +12,7 @@ interface ViewModelDelegate {
     fun pressBackBtn()
 }
 
-class ViewModelDelegateImp @Inject constructor(
-
-) : ViewModelDelegate{
+class ViewModelDelegateImp @Inject constructor() : ViewModelDelegate{
     override val toastObservable = MutableLiveData<Event<Int>>()
 
     private val _backBtnEvent = MutableLiveData<Event<Unit>>()

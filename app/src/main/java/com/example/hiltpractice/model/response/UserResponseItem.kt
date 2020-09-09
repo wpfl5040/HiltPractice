@@ -7,5 +7,5 @@ import com.squareup.moshi.JsonClass
 data class UserResponseItem(
     @field:Json(name = "avatar_url") val avatar_url: String,
     @field:Json(name = "id") val id: Int,
-    @field:Json(name = "loging") val login: String
+    @field:Json(name = "login") val login: String
 )
